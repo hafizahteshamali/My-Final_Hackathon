@@ -98,7 +98,7 @@ const ForgotPasswordController = async (req, res)=>{
         
         await userFound.save();
 
-        const sendingForgotPasswordLink = `https://finance-app-topaz-seven.vercel.app/resetPassword/${resetToken}`;
+        const sendingForgotPasswordLink = `https://my-final-hackathon.vercel.app/resetPassword/${resetToken}`;
 
         sendMailVerification(email, sendingForgotPasswordLink);
 
